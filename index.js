@@ -50,7 +50,6 @@ function renderPost(currentPost) //adds html for the current post rendering from
 
     console.log(currentPost.name)
 
-    //is it ok to use ${} inside the alt text for images? or does the reader not translate correctly
     let postHtml = `
     <section class="container post-container">
         <div class="post-info">

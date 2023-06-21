@@ -1,11 +1,10 @@
 
-
 html, body {
     margin: 0;
     padding: 0;
     font-family: 'Source+Sans+3', Arial, Helvetica, sans-serif;
     font-size: 12px;
-    background: rgb(187, 187, 187);
+    background: rgb(219, 219, 219);
 }
 
 /* outline contents for layout purposes*/
@@ -31,8 +30,6 @@ h3{
 }
 
 
-/* Layout */
-
 /* General */
 .container{
     margin: 0 auto;
@@ -40,14 +37,14 @@ h3{
     background: white;
 }
 
-.post-container{
-    height: 545px;
-}
-
 header,
 .post-info{
     display: flex;
     align-items: center;
+}
+
+img{
+    user-select:none;
 }
 
 .profile-img{
@@ -67,11 +64,9 @@ header img{
     width: 127px;
 }
 
-
-
 /* post */
 .post-info{
-    border-top: 1px solid rgba(198, 198, 198, 1);
+    border-top: 1px solid rgb(179, 179, 179);
     padding: 10px;
 }
 
@@ -86,7 +81,7 @@ header img{
 }
 
 .post-content{
-    margin: 21px auto 16px 10px;
+    margin: 21px auto 12px 10px;
 }
 
 .post-icons{
@@ -101,7 +96,7 @@ header img{
 
 /* Icons */
 /* Unsure if there was a better way to handle changing color on hover, originally used <img> for each icon */
-/* How would you have the icons stay in the hover state after they are clicked? */
+/* How would you have the icons stay in the hover state after they are clicked? Update to this question in js file */
 #heart,
 #comment,
 #dm{
@@ -132,4 +127,11 @@ header img{
 #dm:hover,
 #dm:active{
     background-image: url("images/icon-dm-active.png");
+}
+
+.profile-img:hover,
+#heart:hover,
+#comment:hover,
+#dm:hover{
+    cursor: pointer;
 }
