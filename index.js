@@ -63,9 +63,9 @@ function renderPost(currentPost) //adds html for the current post rendering from
         <img class="post-img" src="${currentPost.post}" alt="painted portrait of ${currentPost.name}">
         <div class="post-content">
             <div class="post-icons">
-                <img class="red-hover" src="images/icon-heart.png" alt="heart icon to like post">
-                <img class="grey-hover" src="images/icon-comment.png" alt="speach bubble to comment on post">
-                <img class="grey-hover" src="images/icon-dm.png" alt="paper plane icon to dm">
+                <div class="icon-img heart" title="heart icon"></div>
+                <div class="icon-img comment" title="comment icon"></div>
+                <div class="icon-img dm" title="direct message icon"></div>
             </div>
             <h3 class="bold-text">${currentPost.likes} likes</h3>
             <span class="bold-text">${currentPost.username}</span>

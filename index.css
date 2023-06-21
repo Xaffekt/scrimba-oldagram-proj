@@ -91,16 +91,43 @@ header img{
 }
 
 .post-icons{
+    display: flex;
     margin: 0 0 12px 0;
 }
-
-.red-hover:hover{
-    background: red;
-}
-
-.post-icons img{
+.post-icons .icon-img{
     width: 23px;
+    height: 23px;
     margin: 0 10px 0 0;
 }
 
+/* Icons */
+/* Unsure if there was a better way to handle changing color on hover, originally used <img> for each icon */
+.heart,
+.comment,
+.dm{
+    background-size: cover;
+}
 
+.heart{
+    background-image: url("images/icon-heart.png");
+}
+.heart:hover,
+.heart:active{
+    background-image: url("images/icon-heart-active.png");
+}
+
+.comment{
+    background-image: url("images/icon-comment.png");
+}
+.comment:hover,
+.comment:active{
+    background-image: url("images/icon-comment-active.png");
+}
+
+.dm{
+    background-image: url("images/icon-dm.png");
+}
+.dm:hover,
+.dm:active{
+    background-image: url("images/icon-dm-active.png");
+}
