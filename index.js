@@ -29,22 +29,28 @@ const posts = [
 ]
 
 let postsEl = document.getElementById("posts-el")
-function render()
+
+function render() //allows the render of any posts added to the posts array 
 {
     postsEl.innerHTML = ""
+    let postContent = ""
+    
     for(let i=0; i < posts.length;i++)
     {
-        postsEl.innerHTML += renderPost(posts[i])
+        postContent += renderPost(posts[i])
     }
+    postsEl.innerHTML = postContent
 }
 
-render();
+//unsure if this was the best way to render out the posts but im really happy that it even worked lol
+render(); 
 
-function renderPost(currentPost)
+function renderPost(currentPost) //adds html for the current post rendering from posts array
 {
 
     console.log(currentPost.name)
 
+    //is it ok to use ${} inside the alt text for images? or does the reader not translate correctly
     let postHtml = `
     <section class="container post-container">
         <div class="post-info">
@@ -57,9 +63,9 @@ function renderPost(currentPost)
         <img class="post-img" src="${currentPost.post}" alt="painted portrait of ${currentPost.name}">
         <div class="post-content">
             <div class="post-icons">
-                <img src="images/icon-heart.png" alt="heart icon to like post">
-                <img src="images/icon-comment.png" alt="speach bubble to comment on post">
-                <img src="images/icon-dm.png" alt="paper plane icon to dm">
+                <img class="red-hover" src="images/icon-heart.png" alt="heart icon to like post">
+                <img class="grey-hover" src="images/icon-comment.png" alt="speach bubble to comment on post">
+                <img class="grey-hover" src="images/icon-dm.png" alt="paper plane icon to dm">
             </div>
             <h3 class="bold-text">${currentPost.likes} likes</h3>
             <span class="bold-text">${currentPost.username}</span>

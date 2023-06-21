@@ -8,6 +8,11 @@ html, body {
     background: rgb(187, 187, 187);
 }
 
+/* outline contents for layout purposes*/
+.border{ 
+    border: 5px dotted red;
+}
+
 
 /* Textiles */
 
@@ -29,9 +34,11 @@ h3{
 
 /* Layout */
 
+/* General */
 .container{
     margin: 0 auto;
     width: 375px;
+    background: white;
 }
 
 .post-container{
@@ -44,21 +51,28 @@ header,
     align-items: center;
 }
 
+.profile-img{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
 
-/* Header */
+/* header */
 header{
     justify-content: space-between;
     height: 67px;
     padding: 0 16px;
-    border-bottom: 1px solid rgba(198, 198, 198, 1);
 }
 
 header img{
     width: 127px;
 }
 
-/* Post */
+
+
+/* post */
 .post-info{
+    border-top: 1px solid rgba(198, 198, 198, 1);
     padding: 10px;
 }
 
@@ -66,15 +80,10 @@ header img{
     padding-right: 7px;
 }
 
-.profile-img{
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-}
-
 .post-img{
     width: inherit;
-    height: 375px;
+    /* is there a way to force height to be equal to width? couldnt find a clear answer */
+    height: 375px; 
 }
 
 .post-content{
@@ -85,18 +94,13 @@ header img{
     margin: 0 0 12px 0;
 }
 
+.red-hover:hover{
+    background: red;
+}
+
 .post-icons img{
     width: 23px;
     margin: 0 10px 0 0;
 }
 
 
-/* Design */
-
-.border{
-    border: 5px dotted red;
-}
-
-.container{
-    background: white;
-}
