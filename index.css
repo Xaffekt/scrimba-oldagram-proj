@@ -18,7 +18,6 @@ html, body {
 
 h3{
     margin: 0 0 12px 0;
-
 }
 
 .block-text span{
@@ -102,32 +101,35 @@ header img{
 
 /* Icons */
 /* Unsure if there was a better way to handle changing color on hover, originally used <img> for each icon */
-.heart,
-.comment,
-.dm{
+/* How would you have the icons stay in the hover state after they are clicked? */
+#heart,
+#comment,
+#dm{
     background-size: cover;
+    border:none;
+    background-color: white;
 }
 
-.heart{
+#heart{
     background-image: url("images/icon-heart.png");
 }
-.heart:hover,
-.heart:active{
+#heart:hover,
+#heart:active{
     background-image: url("images/icon-heart-active.png");
 }
 
-.comment{
+#comment{
     background-image: url("images/icon-comment.png");
 }
-.comment:hover,
-.comment:active{
+#comment:hover,
+#comment:active{
     background-image: url("images/icon-comment-active.png");
 }
 
-.dm{
+#dm{
     background-image: url("images/icon-dm.png");
 }
-.dm:hover,
-.dm:active{
+#dm:hover,
+#dm:active{
     background-image: url("images/icon-dm-active.png");
 }

@@ -63,9 +63,9 @@ function renderPost(currentPost) //adds html for the current post rendering from
         <img class="post-img" src="${currentPost.post}" alt="painted portrait of ${currentPost.name}">
         <div class="post-content">
             <div class="post-icons">
-                <div class="icon-img heart" title="heart icon"></div>
-                <div class="icon-img comment" title="comment icon"></div>
-                <div class="icon-img dm" title="direct message icon"></div>
+                <button class="icon-img" id="heart" title="heart icon"></button>
+                <button class="icon-img" id="comment" title="comment icon"></button>
+                <button class="icon-img" id="dm" title="direct message icon"></button>
             </div>
             <h3 class="bold-text">${currentPost.likes} likes</h3>
             <span class="bold-text">${currentPost.username}</span>
@@ -75,4 +75,26 @@ function renderPost(currentPost) //adds html for the current post rendering from
 
     return postHtml
 }
+
+
+//This function works to simulate liking the image, 
+//however it breaks the hover state so i opted to not use it
+
+// let isLiked = false;
+// function heartClick()
+// {
+//     if(isLiked === false)
+//     {
+//         document.getElementById("heart").style.backgroundImage = "url('images/icon-heart-active.png')"
+//         isLiked = true
+//         console.log(isLiked)
+//     }
+//     else
+//     {
+//         document.getElementById("heart").style.backgroundImage = "url('images/icon-heart.png')"
+//         isLiked = false
+//         console.log(isLiked)
+//     }
+
+// }
 
