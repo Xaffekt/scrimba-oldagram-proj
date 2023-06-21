@@ -1,5 +1,102 @@
+
+
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Source+Sans+3', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background: rgb(187, 187, 187);
 }
 
+
+/* Textiles */
+
+h3{
+    margin: 0 0 12px 0;
+
+}
+
+.block-text span{
+    font-family: inherit;
+    display: block;
+}
+
+.bold-text{
+    font-weight: 700;
+    font-size: 13px;
+}
+
+
+/* Layout */
+
+.container{
+    margin: 0 auto;
+    width: 375px;
+}
+
+.post-container{
+    height: 545px;
+}
+
+header,
+.post-info{
+    display: flex;
+    align-items: center;
+}
+
+
+/* Header */
+header{
+    justify-content: space-between;
+    height: 67px;
+    padding: 0 16px;
+    border-bottom: 1px solid rgba(198, 198, 198, 1);
+}
+
+header img{
+    width: 127px;
+}
+
+/* Post */
+.post-info{
+    padding: 10px;
+}
+
+.post-info .profile-img{
+    padding-right: 7px;
+}
+
+.profile-img{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.post-img{
+    width: inherit;
+    height: 375px;
+}
+
+.post-content{
+    margin: 21px auto 16px 10px;
+}
+
+.post-icons{
+    margin: 0 0 12px 0;
+}
+
+.post-icons img{
+    width: 23px;
+    margin: 0 10px 0 0;
+}
+
+
+/* Design */
+
+.border{
+    border: 5px dotted red;
+}
+
+.container{
+    background: white;
+}
